@@ -1,0 +1,168 @@
+*
+ margin: 0
+ padding: 0
+ box-sizing: border-box
+ font-family: 'Open Sans', sans-serif
+.hide 
+ display: none
+.mobile_hide
+ display: none
+.project
+ border: 0.3px solid #828282
+ border-radius: 16px
+ margin: 27px 18px 30px
+ &__img
+  position: relative
+  background: url(../img/sankt-peterburg-piter-st-3495.png)
+  background-size: 100% 100%
+  border-radius: 14px 14px 0px 0px
+  min-height: 220px
+  &::after
+   content: 'НОВИНКА'
+   position: absolute
+   width: 99px
+   height: 35px
+   top: 40px
+   left: 0
+   background-color: #FED74B
+   display: flex
+   justify-content: center
+   align-items: center
+   font-weight: 600
+   font-size: 12px
+   line-height: 20px
+ &__img2
+  min-height: 284px
+  &::after 
+   width: 129px
+   height: 43px
+   top: 0
+   background: #7553FF
+   border-radius: 15px 0px 12px
+   color: #ffffff
+ &-content
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 14px 12px 19px
+ &-time 
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  &__clock
+   position: relative
+   width: 16px
+   height: 16px
+   border: 2px solid #C7C7C7
+   border-radius: 50%
+   margin-right: 9px
+   &::before
+    content: ''
+    position: absolute
+    width: 6px
+    height: 2px
+    right: 1px
+    top: 6px
+    background-color: #C7C7C7
+   &::after
+    content: ''
+    position: absolute
+    width: 2px
+    height: 6px
+    left: 5px
+    top: 1px
+    background-color: #C7C7C7
+  &__text
+   color: #9E9E9E
+   font-weight: 400
+   font-size: 12px
+ &__title
+  color: #404040
+  font-weight: 600
+  font-size: 14px
+  line-height: 22px
+  margin-bottom: 15px
+ &__list
+  color: #4B4B4B
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+  margin-bottom: 7px
+  li 
+   position: relative
+   margin: 10px
+   margin-left: 38px
+   list-style: none
+   &::before 
+    content: ''
+    position: absolute
+    width: 14px
+    height: 3px
+    left: -30px
+    top: 14px
+    transform: rotate(-45deg)
+    transform-origin: left top
+    background-color:#FECF01
+   &::after 
+    content: ''
+    position: absolute
+    width: 3px
+    height: 6px
+    left: -30px
+    top: 8px
+    transform: rotate(-45deg)
+    transform-origin: left bottom
+    background-color:#FECF01
+ &-dates 
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: flex-start
+  margin-left: 38px
+  margin-right: 15px
+  margin-bottom: 35px
+ &__date
+  background-color: #D9E8FF
+  padding: 3px 12px
+  border-radius: 11px
+  color: #343434
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+  margin-right: 5px
+  margin-bottom: 7px
+ &-footer 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-left: 7px
+  margin-right: 7px
+  order: 5
+ &-price
+  display: flex
+  flex-direction: column
+  justify-content: start
+  &__big
+   font-weight: 400
+   font-size: 30px
+   line-height: 20px
+   margin-bottom: 8px
+  &__small
+   font-weight: 400
+   font-size: 10px
+   line-height: 11px
+ &__btn 
+  width: 165px
+  height: 44px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #FED74B
+  border-radius: 20px
+  border: 0.5px solid #CBA500
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+ &__btn2
+  width: 193px
+  border-radius: 10px

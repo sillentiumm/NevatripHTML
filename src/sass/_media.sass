@@ -1,0 +1,234 @@
+
+@media (min-width: 424px) and (max-width: 576px)
+ .project__img
+  min-height: 300px
+
+@media (min-width: 577px) and (max-width: 768px)
+ .project
+  margin: 45px
+  &__img
+   min-height: 360px
+   background-size: cover
+   &::after 
+    width: 120px
+    height: 42px
+    font-size: 14px
+  &__img2::after 
+   width: 140px
+   height: 45px
+   font-size: 14px
+  &__title
+   text-align: center
+   font-weight: 400
+   font-size: 22px
+   line-height: 34px
+  &__list
+   li
+    font-size: 15px
+    line-height: 20px
+    color: #343434
+  &-dates 
+   margin: 0 0 10px 0
+
+   justify-content: space-around
+  &__date
+   padding: 5px 14px
+   font-size: 16px
+  &-price 
+   margin-right: 30px
+@media (min-width: 769px) and (max-width: 1106px)
+ .mobile_hide
+  display: block
+ .projects
+  min-width: 768px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 auto
+ .project
+  display: flex
+  flex-direction: row
+  margin-top: 65px
+  &_hide
+   display: none
+  &__img
+   min-width: 300px
+   background: url(../img/bridge.jpg)
+   background-size: cover
+   border-radius: 15px 0 0 15px
+   &::after 
+    width: 154px
+    height: 42px
+    font-size: 16px
+    color: #ffffff
+    top: 46px
+    background-color: #099CE8
+  &__img2
+   background: url(../img/city.jpg)
+   background-size: cover
+   &::after 
+    content: "КРУГЛЫЙ ГОД"
+    width: 180px
+    height: 45px
+    top: 49px
+    border-radius: 0
+    background-color: #FFD83B
+    color: #323232
+    font-size: 16px
+  &__img3
+   background: url(../img/music.jpg)
+   background-size: cover
+   &::after 
+    display: none
+  &-content 
+   position: relative
+   align-items: start
+   margin-left: 23px
+  &-time 
+   order: 0
+   margin-bottom: 10px
+   &__text
+    font-size: 14px
+  &__title
+   order: -1
+   font-weight: 400
+   font-size: 26px
+   line-height: 34px
+  &__list 
+   margin-bottom: 15px
+   li
+    font-size: 18px
+    line-height: 20px
+    color: #343434
+    display: flex
+    flex-direction: row
+  &-dates 
+   margin: 0
+   margin-left: 10px
+   margin-bottom: 10px
+  &__date
+   padding: 5px 14px
+   font-size: 16px
+   &:hover
+    background-color: #6BA6FF
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+    color: #ffffff
+    cursor: pointer
+  &-footer 
+   justify-content: start
+  &-price 
+   margin-right: 12px
+   &__big
+    font-size: 36px
+   &__small
+    font-size: 14px
+  &__btn
+   width: 187px
+   height: 52px 
+   font-size: 18px
+   color: #292929
+  &__btn2
+   width: 187px
+   border-radius: 20px
+
+@media (min-width: 1107px)
+ .mobile_hide
+  display: block
+ .projects
+  width: 1106px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 auto
+ .project
+  display: flex
+  flex-direction: row
+  margin-top: 65px
+  margin-left: 0
+  min-width: 1106px
+  &:nth-child(1)
+   min-width: 1070px  
+   width: 1070px
+  &_hide
+   display: none
+  &__img
+   min-width: 473px
+   background: url(../img/bridge.jpg)
+   background-size: 100% 100%
+   border-radius: 15px 0 0 15px
+   &::after 
+    width: 154px
+    height: 42px
+    font-size: 16px
+    color: #ffffff
+    top: 46px
+    background-color: #099CE8
+  &__img2
+   background: url(../img/city.jpg)
+   background-size: 100% 100%
+   &::after 
+    content: "КРУГЛЫЙ ГОД"
+    width: 180px
+    height: 45px
+    top: 49px
+    border-radius: 0
+    background-color: #FFD83B
+    color: #323232
+    font-size: 16px
+  &__img3
+   background: url(../img/music.jpg)
+   background-size: 100% 100%
+   &::after 
+    display: none
+  &-content 
+   position: relative
+   align-items: start
+   margin-left: 23px
+  &-time 
+   order: 0
+   margin-bottom: 10px
+   &__text
+    font-size: 14px
+  &__title
+   order: -1
+   font-weight: 400
+   font-size: 26px
+   line-height: 34px
+  &__list 
+   margin-bottom: 15px
+   li
+    font-size: 18px
+    line-height: 20px
+    color: #343434
+    display: flex
+    flex-direction: row
+    &:nth-child(4)
+     display: inline
+  &-dates 
+   display: inline-flex
+   margin: 0
+   margin-left: 10px
+  &__date
+   padding: 5px 14px
+   font-size: 16px
+   &:hover
+    background-color: #6BA6FF
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+    color: #ffffff
+    cursor: pointer
+  &-footer 
+   justify-content: start
+  &-price 
+   margin-right: 12px
+   &__big
+    font-size: 36px
+   &__small
+    font-size: 14px
+  &__btn
+   width: 187px
+   height: 52px 
+   font-size: 18px
+   color: #292929
+  &__btn2
+   width: 187px
+   border-radius: 20px

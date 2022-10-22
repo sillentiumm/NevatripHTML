@@ -1,0 +1,495 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile_hide {
+  display: none;
+}
+
+.project {
+  border: 0.3px solid #828282;
+  border-radius: 16px;
+  margin: 27px 18px 30px;
+}
+.project__img {
+  position: relative;
+  background: url(../img/sankt-peterburg-piter-st-3495.png);
+  background-size: 100% 100%;
+  border-radius: 14px 14px 0px 0px;
+  min-height: 220px;
+}
+.project__img::after {
+  content: "НОВИНКА";
+  position: absolute;
+  width: 99px;
+  height: 35px;
+  top: 40px;
+  left: 0;
+  background-color: #FED74B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}
+.project__img2 {
+  min-height: 284px;
+}
+.project__img2::after {
+  width: 129px;
+  height: 43px;
+  top: 0;
+  background: #7553FF;
+  border-radius: 15px 0px 12px;
+  color: #ffffff;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14px 12px 19px;
+}
+.project-time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.project-time__clock {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #C7C7C7;
+  border-radius: 50%;
+  margin-right: 9px;
+}
+.project-time__clock::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  right: 1px;
+  top: 6px;
+  background-color: #C7C7C7;
+}
+.project-time__clock::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  left: 5px;
+  top: 1px;
+  background-color: #C7C7C7;
+}
+.project-time__text {
+  color: #9E9E9E;
+  font-weight: 400;
+  font-size: 12px;
+}
+.project__title {
+  color: #404040;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.project__list {
+  color: #4B4B4B;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+.project__list li {
+  position: relative;
+  margin: 10px;
+  margin-left: 38px;
+  list-style: none;
+}
+.project__list li::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  left: -30px;
+  top: 14px;
+  transform: rotate(-45deg);
+  transform-origin: left top;
+  background-color: #FECF01;
+}
+.project__list li::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 6px;
+  left: -30px;
+  top: 8px;
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
+  background-color: #FECF01;
+}
+.project-dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 38px;
+  margin-right: 15px;
+  margin-bottom: 35px;
+}
+.project__date {
+  background-color: #D9E8FF;
+  padding: 3px 12px;
+  border-radius: 11px;
+  color: #343434;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  order: 5;
+}
+.project-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.project-price__big {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.project-price__small {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11px;
+}
+.project__btn {
+  width: 165px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FED74B;
+  border-radius: 20px;
+  border: 0.5px solid #CBA500;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.project__btn2 {
+  width: 193px;
+  border-radius: 10px;
+}
+
+@media (min-width: 424px) and (max-width: 576px) {
+  .project__img {
+    min-height: 300px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .project {
+    margin: 45px;
+  }
+  .project__img {
+    min-height: 360px;
+    background-size: cover;
+  }
+  .project__img::after {
+    width: 120px;
+    height: 42px;
+    font-size: 14px;
+  }
+  .project__img2::after {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .project__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .project__list li {
+    font-size: 15px;
+    line-height: 20px;
+    color: #343434;
+  }
+  .project-dates {
+    margin: 0 0 10px 0;
+    justify-content: space-around;
+  }
+  .project__date {
+    padding: 5px 14px;
+    font-size: 16px;
+  }
+  .project-price {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1106px) {
+  .mobile_hide {
+    display: block;
+  }
+  .projects {
+    min-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
+    margin-top: 65px;
+  }
+  .project_hide {
+    display: none;
+  }
+  .project__img {
+    min-width: 300px;
+    background: url(../img/bridge.jpg);
+    background-size: cover;
+    border-radius: 15px 0 0 15px;
+  }
+  .project__img::after {
+    width: 154px;
+    height: 42px;
+    font-size: 16px;
+    color: #ffffff;
+    top: 46px;
+    background-color: #099CE8;
+  }
+  .project__img2 {
+    background: url(../img/city.jpg);
+    background-size: cover;
+  }
+  .project__img2::after {
+    content: "КРУГЛЫЙ ГОД";
+    width: 180px;
+    height: 45px;
+    top: 49px;
+    border-radius: 0;
+    background-color: #FFD83B;
+    color: #323232;
+    font-size: 16px;
+  }
+  .project__img3 {
+    background: url(../img/music.jpg);
+    background-size: cover;
+  }
+  .project__img3::after {
+    display: none;
+  }
+  .project-content {
+    position: relative;
+    align-items: start;
+    margin-left: 23px;
+  }
+  .project-time {
+    order: 0;
+    margin-bottom: 10px;
+  }
+  .project-time__text {
+    font-size: 14px;
+  }
+  .project__title {
+    order: -1;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .project__list {
+    margin-bottom: 15px;
+  }
+  .project__list li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #343434;
+    display: flex;
+    flex-direction: row;
+  }
+  .project-dates {
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .project__date {
+    padding: 5px 14px;
+    font-size: 16px;
+  }
+  .project__date:hover {
+    background-color: #6BA6FF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .project-footer {
+    justify-content: start;
+  }
+  .project-price {
+    margin-right: 12px;
+  }
+  .project-price__big {
+    font-size: 36px;
+  }
+  .project-price__small {
+    font-size: 14px;
+  }
+  .project__btn {
+    width: 187px;
+    height: 52px;
+    font-size: 18px;
+    color: #292929;
+  }
+  .project__btn2 {
+    width: 187px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1107px) {
+  .mobile_hide {
+    display: block;
+  }
+  .projects {
+    width: 1106px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
+    margin-top: 65px;
+    margin-left: 0;
+    min-width: 1106px;
+  }
+  .project:nth-child(1) {
+    min-width: 1070px;
+    width: 1070px;
+  }
+  .project_hide {
+    display: none;
+  }
+  .project__img {
+    min-width: 473px;
+    background: url(../img/bridge.jpg);
+    background-size: 100% 100%;
+    border-radius: 15px 0 0 15px;
+  }
+  .project__img::after {
+    width: 154px;
+    height: 42px;
+    font-size: 16px;
+    color: #ffffff;
+    top: 46px;
+    background-color: #099CE8;
+  }
+  .project__img2 {
+    background: url(../img/city.jpg);
+    background-size: 100% 100%;
+  }
+  .project__img2::after {
+    content: "КРУГЛЫЙ ГОД";
+    width: 180px;
+    height: 45px;
+    top: 49px;
+    border-radius: 0;
+    background-color: #FFD83B;
+    color: #323232;
+    font-size: 16px;
+  }
+  .project__img3 {
+    background: url(../img/music.jpg);
+    background-size: 100% 100%;
+  }
+  .project__img3::after {
+    display: none;
+  }
+  .project-content {
+    position: relative;
+    align-items: start;
+    margin-left: 23px;
+  }
+  .project-time {
+    order: 0;
+    margin-bottom: 10px;
+  }
+  .project-time__text {
+    font-size: 14px;
+  }
+  .project__title {
+    order: -1;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .project__list {
+    margin-bottom: 15px;
+  }
+  .project__list li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #343434;
+    display: flex;
+    flex-direction: row;
+  }
+  .project__list li:nth-child(4) {
+    display: inline;
+  }
+  .project-dates {
+    display: inline-flex;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .project__date {
+    padding: 5px 14px;
+    font-size: 16px;
+  }
+  .project__date:hover {
+    background-color: #6BA6FF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .project-footer {
+    justify-content: start;
+  }
+  .project-price {
+    margin-right: 12px;
+  }
+  .project-price__big {
+    font-size: 36px;
+  }
+  .project-price__small {
+    font-size: 14px;
+  }
+  .project__btn {
+    width: 187px;
+    height: 52px;
+    font-size: 18px;
+    color: #292929;
+  }
+  .project__btn2 {
+    width: 187px;
+    border-radius: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
